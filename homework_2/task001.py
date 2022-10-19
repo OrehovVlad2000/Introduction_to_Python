@@ -8,6 +8,4 @@ count = 0
 for i in range(len(num)):
     if num[i] != "," and num[i] != ".":
         count += int(num[i])
-    else:
-        continue
 print(count)
