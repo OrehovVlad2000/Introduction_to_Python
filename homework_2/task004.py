@@ -13,7 +13,7 @@ count = 1
 
 for i in range(len(my_lines)):
     pos = int(my_lines[i])
-    if -num < pos < num:
+    if -num <= pos < num:
         count *= num_list[pos]
     else:
         continue
