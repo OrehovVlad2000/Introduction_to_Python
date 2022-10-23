@@ -12,11 +12,7 @@ print(num_list)
 
 sum_list = []
 
-if len(num_list) % 2 == 0:
-    for i in range(int(len(num_list) / 2)):
-        sum_list.append(num_list[i] + num_list[-(i + 1)])
-else:
-    for i in range(int(len(num_list) / 2) + 1):
-        sum_list.append(num_list[i] + num_list[-(i + 1)])
+for i in range((len(num_list) + 1) // 2):
+    sum_list.append(num_list[i] + num_list[-i - 1])
 
 print(sum_list)
