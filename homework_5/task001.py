@@ -5,9 +5,7 @@ text = text.split()
 print(text)
 result_text = []
 for i in range(len(text)):
-    if "а" in text[i].lower() and "б" in text[i].lower() and "в" in text[i].lower():
-        continue
-    else:
+    if not ("а" in text[i].lower() and "б" in text[i].lower() and "в" in text[i].lower()):
         result_text.append(text[i])
 
 text = " ".join(result_text)
