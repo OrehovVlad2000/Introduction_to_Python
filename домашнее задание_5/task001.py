@@ -9,4 +9,4 @@ for i in range(len(text)):
         result_text.append(text[i])
 
 text = " ".join(result_text)
-print(result_text)
+print(text)
