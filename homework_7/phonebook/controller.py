@@ -3,7 +3,8 @@ import model
 import creater
 
 def button_click():
-    act = data.get_action()
+    while True:
+        act = data.get_action()
     if act == 0:
         print(model.look())
     elif act == 1:
@@ -15,3 +16,4 @@ def button_click():
         creater.export(text)
     else:
         print('До встречи!')
+        break
